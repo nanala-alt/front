@@ -1,0 +1,26 @@
+body{
+    front-size: 14px;
+}
+h1{
+	color: #D1AA47;
+	font-size: 58px;
+	font-weight: 100;
+	text-align: center;
+}
+a{
+	color: #426E82;
+	text-decoration: underline wavy;
+}
+.dotted{
+	text-decoration: underline dotted;
+}
+img{
+	width: 450px;
+	height: 550px;
+}
+p{
+	border-left: 5px solid #5A4D1B;
+	border-right: 5px solid #5A4D1B;
+	border-top: 5px dotted #5A4D1B;
+	border-bottom: 5px double #5A4D1B;
+}
