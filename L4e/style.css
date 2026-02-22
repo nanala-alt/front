@@ -142,6 +142,8 @@ box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 43px -8px 
 }
 .preview img{
 	width: 100%;
+	filter: grayscale(100%);
+	transition: .4s;
  
 }
 .buttons{
@@ -149,6 +151,14 @@ box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 43px -8px 
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+}
+.buttons a{
+	width: 20%;
+	text-align: center;
+	margin: 5px;
+}
+.buttons a img{
+	width: 100%;
 }
 .info{
 	
@@ -164,3 +174,129 @@ box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 43px -8px 
 	grid-row: 3/4;
         grid-column: 3/4;
 }
+
+
+
+.smile{
+	position: absolute;
+}
+
+.shape{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background: yellow;
+	border-radius: 100%;
+	transition: 0.4s;
+}
+
+.eyes{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80%;
+	height: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	z-index: 4;
+}
+
+.eye{
+	background: black;
+	height: 100%;
+	width: 25%;
+	border-radius: 50%;
+}
+
+.mouth{
+	position: absolute;
+	background: red;
+	bottom: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50%;
+	height: 50%;
+	border-radius: 100%;
+}
+
+.hider{
+	height: 50%;
+	background: yellow;
+}
+
+.tooth{
+	position: absolute;
+	background: white;
+	height: 10%;
+	width: 100%;
+	top: 50%;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+/*hover active visited*/
+.shape:hover{
+	height: 500px;
+	width: 500px;
+}
+
+.shape:active{
+	background: blue;
+} 
+
+.preview>img:hover{
+	filter: grayscale(0%);
+	filter: opacity(.6);
+	filter: hue-rotate(129deg);
+	filter: drop-shadow(16px 16px 20px blue);
+}
+.nav a{
+	transition: .4s;
+}
+.nav a:hover{
+	font-size: 2em;
+	
+}
+.actionBara a img:hover{
+	transition: .4s;
+}
+/*.smailkva{
+	position: absolute;
+	border-radius: 20%;
+	background: white;
+	width: 200px;
+	height: 200px;
+	top: 800px;
+	
+}
+.cricle{
+	background: yellow;
+	border-radius: 50%;
+	z-index: 5;
+	left: 100px;
+	top: 800px;
+}
+
+
+.eye1{
+	position: absolute;
+	background: black;
+	border-radius: 70%;
+	height: 40px;
+	width: 35px;
+	top: 40px;
+	left: 40px;
+	z-index: 4;
+*/
+}
+body{
+	height: 2000px;
+}
+
+
+
+
+
+
+
