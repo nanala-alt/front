@@ -132,8 +132,8 @@ box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 43px -8px 
 	width: 50%;
 	margin: 5px;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-start;
+	justify-content: space-between;
 	flex-direction: column;
 }
 .preview{
@@ -258,8 +258,11 @@ box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 43px -8px 
 	font-size: 2em;
 	
 }
+.actionBara a img{
+       transition: .4s;
+}
 .actionBara a img:hover{
-	transition: .4s;
+	transition: scale(1.3)
 }
 /*.smailkva{
 	position: absolute;
@@ -294,9 +297,81 @@ body{
 	height: 2000px;
 }
 
+.info{
+	margin: 20px;
+
+}
+.title h1, .title span, .title a{
+	text-transform: capitalize;
+	font-size: 2.5em;
+	color: darkblue;
+}
+.title{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+	border-bottom: 1px solid lightblue;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+}
+.form{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.count_btns{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: white;
+	color: darkblue;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius:  15px;
+	font-size: 11px;
+}
+.count_btns a{
+	padding: 0 10px;
+}
+.count_btns span{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding: 0 15px;
+}
+
+.add_btn{
+	color: white !important;
+	background: darkblue;
+	border: 2px solid lightblue;
+	border-radius: 15px;
+	padding: 5px 40px;
+}
+
+ .features{
+ 	width: 100%;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: space-between;
+ 	flex-wrap: wrap;
+ 	gap: 20px;
+ 	margin-bottom: 25px;
 
 
+ }
+.features span, .features img{
+	height: 25px;
+	font-size: 30px;
 
+}
+.features span{
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-
+}
 
